@@ -1,4 +1,6 @@
 import Hero from "@/components/home/Hero";
+import HeroV2 from "@/components/home/HeroV2";
+import SectionEight from "@/components/home/SectionEight";
 import SectionFive from "@/components/home/SectionFive";
 import SectionFour from "@/components/home/SectionFour";
 import SectionSeven from "@/components/home/SectionSeven";
@@ -13,13 +15,16 @@ export default function Home() {
       <Head>
         <title>Somni Clone</title>
       </Head>
-      <Hero />
-      <SectionTwo />
+      <HeroV2 />
+      {/* <Hero /> */}
+      <div className="mixer relative z-20 -my-[15vh] h-[30vh] w-full bg-linear-0 from-transparent via-[#1C120F] to-transparent" />
+      <SectionEight />
+      {/* <SectionTwo /> */}
       <SectionThree />
       <SectionFour />
-      <SectionFive />
+      {/* <SectionFive /> */}
       <SectionSix />
-      <SectionSeven />
+      {/* <SectionSeven /> */}
     </>
   );
 }

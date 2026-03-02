@@ -28,10 +28,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       id="smooth-wrapper"
       className={`${founderGrotesk.variable} ${gtSuperDisplay.variable} font-sans`}
     >
-      <div id="smooth-content">
-        {children}
-        <Footer />
-      </div>
+      <div id="smooth-content">{children}</div>
     </main>
   );
 };

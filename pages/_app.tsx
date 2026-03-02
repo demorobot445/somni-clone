@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import ScrollSmoother from "gsap/dist/ScrollSmoother";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import type { AppProps } from "next/app";
+import "swiper/css";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 

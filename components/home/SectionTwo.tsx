@@ -48,30 +48,30 @@ const SectionTwo = () => {
   return (
     <section
       ref={container}
-      className="relative overflow-x-clip rounded-t-full bg-soft-black pt-[17.5dvh] text-light-gray md:pt-[33.33dvh]"
+      className="text-light-gray relative overflow-x-clip bg-[#1C120F] pt-[17.5dvh] md:pt-[33.33dvh]"
     >
-      <div className="px-5 md:px-8 text-primary-title relative text-center">
-        <div className="relative isolate mx-auto flex items-end h-screen">
-          <h1 className="main-heading font-display text-[5.25rem] leading-[100%] w-full md:text-[13.5vw] text-center md:leading-none">
+      <div className="text-primary-title relative px-5 text-center md:px-8">
+        <div className="relative isolate mx-auto flex h-screen items-end">
+          <h1 className="main-heading font-display w-full text-center text-[5.25rem] leading-[100%] md:text-[13.5vw] md:leading-none">
             Tot
             <br />
             Comença
           </h1>
         </div>
         <Image
-          className="size-48 md:size-[28vw] mx-auto md:scale-125"
+          className="mx-auto size-48 md:size-[28vw] md:scale-125"
           src="/home/section-two/flower.png"
           width={1024}
           height={1024}
           alt="flower-img"
         />
-        <h1 className="font-display w-full text-[5.25rem] leading-[100%] scale-75 md:scale-100 md:text-[13.5vw] text-center md:leading-none">
+        <h1 className="font-display w-full scale-75 text-center text-[5.25rem] leading-[100%] md:scale-100 md:text-[13.5vw] md:leading-none">
           Amb Un Somni
         </h1>
-        <div className="md:px-8 pb-14 pt-28 md:py-40">
-          <div className="grid grid-cols-4 md:grid-cols-12 gap-x-5 md:gap-x-8">
+        <div className="pt-28 pb-14 md:px-8 md:py-40">
+          <div className="grid grid-cols-4 gap-x-5 md:grid-cols-12 md:gap-x-8">
             <div className="col-span-4 md:col-span-6 md:col-end-13">
-              <p className="text-[1.75rem] leading-[130%] text-left md:text-center md:text-4xl  md:pr-20">
+              <p className="text-left text-[1.75rem] leading-[130%] md:pr-20 md:text-center md:text-4xl">
                 " Everything starts with a dream..."
               </p>
             </div>

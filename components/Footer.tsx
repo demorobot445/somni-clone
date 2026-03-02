@@ -22,7 +22,6 @@ const Footer = () => {
               pinSpacing: true,
               end: () => `+=${innerHeight * 2}`,
               scrub: true,
-              start: "top+=16% top",
             },
           })
           .to(container.current!, { xPercent: -100, x: "100vw" });

@@ -6,34 +6,34 @@ import { useRef } from "react";
 const SectionThree = () => {
   const container = useRef<HTMLElement>(null);
 
-  useGSAP(
-    () => {
-      const mm = gsap.matchMedia();
+  // useGSAP(
+  //   () => {
+  //     const mm = gsap.matchMedia();
 
-      // desktop setup code here...
-      mm.add("(min-width: 800px)", () => {
-        gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: container.current!,
-              pin: true,
-              pinSpacing: true,
-              end: "+=3000",
-              scrub: true,
-            },
-          })
-          .to(container.current!, { xPercent: -100, x: "100vw" });
-      });
-    },
-    { scope: container },
-  );
+  //     // desktop setup code here...
+  //     mm.add("(min-width: 800px)", () => {
+  //       gsap
+  //         .timeline({
+  //           scrollTrigger: {
+  //             trigger: container.current!,
+  //             pin: true,
+  //             pinSpacing: true,
+  //             end: "+=3000",
+  //             scrub: true,
+  //           },
+  //         })
+  //         .to(container.current!, { xPercent: -100, x: "100vw" });
+  //     });
+  //   },
+  //   { scope: container },
+  // );
 
   return (
     <section
       ref={container}
-      className="bg-soft-black text-light-gray -mt-px flex w-fit flex-col md:h-dvh md:flex-row"
+      className="text-light-gray -mt-px flex w-fit flex-col bg-[#1C120F] md:h-dvh md:flex-row"
     >
-      <div className="flex w-screen flex-col justify-between gap-14 p-7 md:gap-0">
+      {/* <div className="flex w-screen flex-col justify-between gap-14 p-7 md:gap-0">
         <div className="grid grid-cols-4 gap-x-8 gap-y-14 md:grid-cols-12 md:gap-y-0">
           <Image
             className="col-span-3 object-contain md:w-[22vw]"
@@ -111,7 +111,7 @@ const SectionThree = () => {
             the same family. Benvingut, ongi etorria, welcome!
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="text-soft-black relative flex h-dvh w-screen items-center justify-center bg-white">
         <div className="absolute -bottom-0.5 left-0 z-10 h-1 w-full bg-white" />
 
