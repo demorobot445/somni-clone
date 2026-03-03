@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Somni Clone</title>
+        <title>Hala Coffee</title>
       </Head>
       <HeroV2 />
       {/* <Hero /> */}
