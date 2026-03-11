@@ -7,15 +7,17 @@ const SectionEight = () => {
       <div className="relative px-5 py-14 md:px-8">
         <div className="grid grid-cols-4 gap-x-5 gap-y-14 md:grid-cols-12 md:gap-x-8 md:gap-y-0">
           <div className="col-span-4 flex flex-col gap-6 text-white md:col-span-5 md:gap-10">
-            <h1 className="font-display block text-5xl md:text-[6.042vw] md:leading-none">
-              Favorite Products
+            <h1 className="font-display block text-5xl md:text-[6.5rem] md:leading-[100%]">
+              Favorite
+              <br />
+              Products
             </h1>
-            <p className="md:text-[1.5vw] md:leading-[130%]">
+            <p className="max-w-80">
               Since the fifteenth century, when roasted beans were first poured
               in Yemen, it carried more than energy. it carried meaning. In Los
               Angeles, we carry this heritage forward.
             </p>
-            <div className="flex items-center gap-6 font-semibold md:text-[1.7vw] md:leading-[130%]">
+            <div className="flex items-center gap-6 font-semibold md:text-lg">
               <span>Drip Coffee</span>
               <span>Pods</span>
               <span>Cans</span>
