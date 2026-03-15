@@ -26,6 +26,17 @@ const SectionSix = () => {
           .timeline({
             scrollTrigger: {
               trigger: container.current!,
+              start: "top top",
+            },
+            defaults: { duration: 1.5, ease: "power1.out" },
+          })
+          .from(".text", { opacity: 0, y: 100, stagger: 0.2 })
+          .from(".images", { opacity: 0, yPercent: 50, stagger: 0.2 }, "<0.2");
+
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: container.current!,
               pin: true,
               pinSpacing: true,
               end: () => `+=${innerHeight * 5}`,
@@ -46,21 +57,21 @@ const SectionSix = () => {
       >
         <div className="flex h-screen w-screen flex-col px-5 py-14 md:flex-row md:gap-[5vw] md:px-0 md:pr-8">
           <Image
-            className="h-fit w-full object-cover md:mt-auto md:w-[60vw]"
+            className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
             src="/home/section-six/room-0.png"
             alt="room-img"
             width={1920}
             height={1080}
           />
           <div className="flex flex-col gap-4 md:w-[40vw]">
-            <h1 className="font-display block text-4xl md:text-[4vw] md:leading-none">
+            <h1 className="text font-display block text-4xl md:text-[4vw] md:leading-none">
               A space for connection, gathering, and Building Memories
             </h1>
-            <p className="md:text-[1.5vw] md:leading-[130%]">
+            <p className="text md:text-[1.5vw] md:leading-[130%]">
               A space for connection, for gathering, for bringing people
               together.
             </p>
-            <p className="md:text-[1.5vw] md:leading-[130%]">
+            <p className="text md:text-[1.5vw] md:leading-[130%]">
               Since the fifteenth century, when roasted beans were first poured
               in Yemen, it carried more than energy. it carried meaning. In Los
               Angeles, we carry this heritage forward.
@@ -69,23 +80,23 @@ const SectionSix = () => {
         </div>
         <div className="flex h-screen w-screen flex-col px-5 py-14 md:flex-row-reverse md:gap-[5vw] md:px-0 md:pl-8">
           <Image
-            className="h-fit w-full object-cover md:mt-auto md:w-[60vw]"
+            className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
             src="/home/section-six/room-1.png"
             alt="room-img"
             width={1920}
             height={1080}
           />
           <div className="flex flex-col gap-4 md:w-[40vw]">
-            <p className="md:text-[1.5vw] md:leading-[130%]">
+            <p className="text md:text-[1.5vw] md:leading-[130%]">
               Hala as a space to be... A tool for connection, for gathering, for
               bringing people together.
             </p>
-            <p className="md:text-[1.5vw] md:leading-[130%]">
+            <p className="text md:text-[1.5vw] md:leading-[130%]">
               Since the fifteenth century, when roasted beans were first poured
               in Yemen, it carried more than energy. it carried meaning. In Los
               Angeles, we carry this heritage forward.
             </p>
-            <p className="md:text-[1.5vw] md:leading-[130%]">
+            <p className="text md:text-[1.5vw] md:leading-[130%]">
               It carried more than energy. it carried meaning. In Los Angeles,
               we carry this heritage forward.
             </p>

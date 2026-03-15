@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import Footer from "./Footer";
+import Header from "./Header";
 
 const founderGrotesk = localFont({
   src: [
@@ -28,7 +29,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       id="smooth-wrapper"
       className={`${founderGrotesk.variable} ${gtSuperDisplay.variable} font-sans`}
     >
-      <div id="smooth-content">{children}</div>
+      <div id="smooth-content">
+        <Header />
+        {children}
+      </div>
     </main>
   );
 };

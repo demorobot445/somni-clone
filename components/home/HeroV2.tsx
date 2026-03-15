@@ -8,6 +8,12 @@ const HeroV2 = () => {
 
   useGSAP(
     () => {
+      gsap.set(".text-image", { yPercent: 70, opacity: 0 });
+
+      gsap
+        .timeline({ defaults: { duration: 2, ease: "power1.out" } })
+        .to(".text-image", { delay: 0.5, yPercent: 0, opacity: 1 });
+
       gsap
         .timeline({
           scrollTrigger: {
@@ -30,13 +36,15 @@ const HeroV2 = () => {
         width={1920}
         height={1080}
       />
-      <Image
-        className="text absolute top-[42%] left-1/2 z-10 w-[80%] -translate-x-1/2 object-cover md:top-[20%]"
-        src="/home/hero/display-text.svg"
-        alt="text"
-        width={1920}
-        height={1080}
-      />
+      <div className="text absolute top-[42%] left-1/2 z-10 w-[80%] -translate-x-1/2 object-cover md:top-[20%]">
+        <Image
+          className="text-image"
+          src="/home/hero/display-text.svg"
+          alt="text"
+          width={1920}
+          height={1080}
+        />
+      </div>
       <Image
         className="top-layer absolute inset-0 z-20 h-full w-full object-cover"
         src="/home/hero/top-layer.png"
