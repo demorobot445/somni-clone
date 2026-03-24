@@ -112,8 +112,8 @@ const SectionThree = () => {
           </p>
         </div>
       </div> */}
-      <div className="text-soft-black relative flex h-dvh w-screen items-center justify-center bg-white">
-        <div className="absolute -bottom-0.5 left-0 z-10 h-1 w-full bg-white" />
+      <div className="text-soft-black relative flex h-dvh w-screen items-center justify-center">
+        <div className="absolute -bottom-0.5 left-0 z-10 h-1 w-full bg-[#1C120F]" />
 
         <div className="w-full px-5 md:px-8">
           <div className="relative flex w-40 items-end pb-8 md:hidden">
@@ -125,7 +125,7 @@ const SectionThree = () => {
               height={689}
             /> */}
           </div>
-          <div className="relative grid grid-cols-4 gap-x-5 md:grid-cols-12 md:gap-x-8 md:gap-y-12">
+          <div className="relative grid grid-cols-4 gap-x-5 text-white md:grid-cols-12 md:gap-x-8 md:gap-y-12">
             <div className="font-display relative col-span-4 text-[5.3125rem] leading-[100%] md:col-span-5 md:col-start-2 md:text-[13vw] md:leading-none">
               Gallery
             </div>

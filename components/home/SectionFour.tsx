@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const SectionFour = () => {
   return (
-    <section className="relative h-480 px-5 md:h-560 md:px-8">
-      <Image
+    <section className="relative h-480 bg-linear-0 from-[#7b6859] to-[#1C120F] px-5 md:h-560 md:px-8">
+      {/* <Image
         className="pointer-events-none absolute inset-0 -z-1 h-full w-full object-cover"
         src="/home/section-three/menu-bg.png"
         alt="background-img"
         width={1920}
         height={1080}
-      />
+      /> */}
       {/* Grid # 1 */}
       <div className="relative z-20 grid grid-cols-4 gap-x-5 pt-20 md:grid-cols-12 md:gap-x-8 md:pt-0 md:pb-52">
         <div
