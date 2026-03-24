@@ -117,19 +117,19 @@ const SectionThree = () => {
 
         <div className="w-full px-5 md:px-8">
           <div className="relative flex w-40 items-end pb-8 md:hidden">
-            <Image
+            {/* <Image
               className="-translate-x-1/2 object-cover"
               src="/home/dishes/2.webp"
               alt="dish-img"
               width={1366}
               height={689}
-            />
+            /> */}
           </div>
           <div className="relative grid grid-cols-4 gap-x-5 md:grid-cols-12 md:gap-x-8 md:gap-y-12">
             <div className="font-display relative col-span-4 text-[5.3125rem] leading-[100%] md:col-span-5 md:col-start-2 md:text-[13vw] md:leading-none">
               Gallery
             </div>
-            <div className="relative col-span-2 col-start-8 flex items-end max-md:hidden">
+            {/* <div className="relative col-span-2 col-start-8 flex items-end max-md:hidden">
               <Image
                 className="w-[70%] object-cover"
                 src="/home/dishes/0.webp"
@@ -137,8 +137,8 @@ const SectionThree = () => {
                 width={1366}
                 height={689}
               />
-            </div>
-            <div className="relative col-span-2 col-start-3 max-md:hidden">
+            </div> */}
+            {/* <div className="relative col-span-2 col-start-3 max-md:hidden">
               <Image
                 className="object-cover"
                 src="/home/dishes/1.webp"
@@ -146,11 +146,11 @@ const SectionThree = () => {
                 width={1366}
                 height={689}
               />
-            </div>
+            </div> */}
             <div className="font-display col-span-4 col-start-2 text-[5.3125rem] leading-[100%] md:col-span-5 md:col-start-6 md:text-[13vw] md:leading-none">
               Gallery
             </div>
-            <div className="relative max-md:hidden">
+            {/* <div className="relative max-md:hidden">
               <Image
                 className="translate-1/2 scale-[225%] object-cover"
                 src="/home/dishes/2.webp"
@@ -158,9 +158,9 @@ const SectionThree = () => {
                 width={1366}
                 height={689}
               />
-            </div>
+            </div> */}
           </div>
-          <div className="relative flex items-end justify-end pt-8 md:hidden">
+          {/* <div className="relative flex items-end justify-end pt-8 md:hidden">
             <Image
               className="w-61.5 object-cover"
               src="/home/dishes/1.webp"
@@ -168,7 +168,7 @@ const SectionThree = () => {
               width={1366}
               height={689}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
