@@ -50,12 +50,12 @@ const SectionSix = () => {
   );
 
   return (
-    <div className="flex flex-col overflow-hidden bg-[#070707] text-white md:flex-row">
+    <div className="flex flex-col overflow-hidden bg-[#1E1512] text-white md:flex-row">
       <section
         ref={container}
         className="flex w-fit flex-col md:flex-row md:px-8"
       >
-        <div className="flex h-screen w-screen flex-col px-5 py-14 md:flex-row md:gap-[5vw] md:px-0 md:pr-8">
+        <div className="flex h-screen w-screen flex-col gap-5 px-5 py-14 md:flex-row md:gap-[5vw] md:px-0 md:pr-8">
           <Image
             className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
             src="/home/section-six/room-0.png"
@@ -78,7 +78,7 @@ const SectionSix = () => {
             </p>
           </div>
         </div>
-        <div className="flex h-screen w-screen flex-col px-5 py-14 md:flex-row-reverse md:gap-[5vw] md:px-0 md:pl-8">
+        <div className="flex h-screen w-screen flex-col gap-5 px-5 py-14 md:flex-row-reverse md:gap-[5vw] md:px-0 md:pl-8">
           <Image
             className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
             src="/home/section-six/room-1.png"
@@ -86,7 +86,7 @@ const SectionSix = () => {
             width={1920}
             height={1080}
           />
-          <div className="flex flex-col gap-4 md:w-[40vw]">
+          <div className="flex flex-col justify-center gap-4 md:w-[40vw]">
             <p className="text md:text-[1.5vw] md:leading-[130%]">
               Hala as a space to be... A tool for connection, for gathering, for
               bringing people together.

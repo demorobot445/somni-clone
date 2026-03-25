@@ -59,16 +59,16 @@ export const User = () => {
       <path
         d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -79,16 +79,16 @@ export const Search = () => {
       <path
         d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.2499 26.25L20.8124 20.8125"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -99,23 +99,23 @@ export const Cart = () => {
       <path
         d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.75 7.5H26.25"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
         stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -126,30 +126,30 @@ export const Hamburger = () => {
       <path
         d="M28.2002 5.5H1.6001"
         stroke="currentColor"
-        stroke-width="2.36445"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.36445"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M22.2891 12.1H1.6001"
         stroke="currentColor"
-        stroke-width="2.36445"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.36445"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M28.2002 18.7H1.6001"
         stroke="currentColor"
-        stroke-width="2.36445"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.36445"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M22.2891 25.3H1.6001"
         stroke="currentColor"
-        stroke-width="2.36445"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.36445"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
