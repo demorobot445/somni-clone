@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
-import Footer from "./Footer";
 import Header from "./Header";
+import FooterV2 from "./FooterV2";
 
 const founderGrotesk = localFont({
   src: [
@@ -32,6 +32,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div id="smooth-content">
         <Header />
         {children}
+        <FooterV2 />
       </div>
     </main>
   );

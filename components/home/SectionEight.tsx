@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const SectionEight = () => {
   return (
-    <section className="relative flex min-h-screen flex-col justify-center bg-[#1C120F]">
+    <section className="relative -mt-0.5 flex min-h-screen flex-col justify-center bg-[#1C120F]">
       <div className="relative px-5 py-14 md:px-8">
         <div className="grid grid-cols-4 gap-x-5 gap-y-14 md:grid-cols-12 md:gap-x-8 md:gap-y-0">
           <div className="col-span-4 flex flex-col gap-6 text-white md:col-span-5 md:gap-10">

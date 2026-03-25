@@ -42,7 +42,7 @@ const SectionNine = () => {
   return (
     <section ref={container} className="flex w-fit flex-col md:flex-row">
       <div className="grid h-screen w-screen grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-8 md:grid-cols-12 md:gap-x-8 md:gap-y-0">
-        <div className="col-span-3 col-start-4 flex flex-col gap-8 pt-20 text-white">
+        <div className="col-span-5 col-start-2 flex flex-col gap-8 pt-20 text-white 2xl:col-span-3 2xl:col-start-4">
           <span className="text text-2xl">(1)</span>
 
           <p className="text">
@@ -67,7 +67,7 @@ const SectionNine = () => {
             width={1024}
           />
         </div>
-        <div className="col-span-4 col-start-9 flex flex-col gap-8 py-20 text-white 2xl:justify-end">
+        <div className="col-span-5 col-start-8 flex flex-col gap-8 py-20 text-white 2xl:col-span-4 2xl:col-start-9 2xl:pt-40">
           <Image
             className="images aspect-square h-50 scale-150 object-contain mix-blend-difference 2xl:h-[35%]"
             src="/dotted/bird.png"
@@ -92,7 +92,7 @@ const SectionNine = () => {
           </p>
         </div>
       </div>
-      <div className="grid h-screen w-screen grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-8 md:grid-cols-12 md:gap-x-8 md:gap-y-0">
+      <div className="-ml-px grid h-screen w-screen grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-8 md:grid-cols-12 md:gap-x-8 md:gap-y-0">
         <div className="col-span-4 col-start-3 flex flex-col gap-8 pt-20 text-white">
           <span className="text text-2xl">(3)</span>
 
@@ -118,7 +118,7 @@ const SectionNine = () => {
             width={1024}
           />
         </div>
-        <div className="col-span-4 col-start-8 flex flex-col justify-end gap-8 pt-20 pb-20 text-white">
+        <div className="col-span-4 col-start-8 flex flex-col justify-end gap-8 pt-20 pb-30 text-white">
           <span className="text text-2xl">(4)</span>
           <p className="text">
             Strength, like the horse in our mark. Kindness in the way we welcome
