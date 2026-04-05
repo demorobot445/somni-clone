@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SectionFour = () => {
   return (
-    <section className="relative h-320 bg-linear-0 from-[#7b6859] to-[#1C120F] px-5 md:h-560 md:px-8">
+    <section className="relative h-360 bg-linear-0 from-[#7b6859] to-[#1C120F] px-5 md:h-560 md:px-8">
       {/* <Image
         className="pointer-events-none absolute inset-0 -z-1 h-full w-full object-cover"
         src="/home/section-three/menu-bg.png"

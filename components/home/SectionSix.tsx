@@ -55,7 +55,7 @@ const SectionSix = () => {
         ref={container}
         className="flex w-fit flex-col md:flex-row md:px-8"
       >
-        <div className="flex h-screen w-screen flex-col gap-5 px-5 py-14 md:flex-row md:gap-[5vw] md:px-0 md:pr-8">
+        <div className="flex w-screen flex-col gap-5 px-5 py-14 md:h-screen md:flex-row md:gap-[5vw] md:px-0 md:pr-8">
           <Image
             className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
             src="/home/section-six/room-0.png"
@@ -78,7 +78,7 @@ const SectionSix = () => {
             </p>
           </div>
         </div>
-        <div className="flex h-screen w-screen flex-col gap-5 px-5 py-14 md:flex-row-reverse md:gap-[5vw] md:px-0 md:pl-8">
+        <div className="flex w-screen flex-col gap-5 px-5 py-14 md:h-screen md:flex-row-reverse md:gap-[5vw] md:px-0 md:pl-8">
           <Image
             className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
             src="/home/section-six/room-1.png"

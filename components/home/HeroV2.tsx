@@ -1,18 +1,17 @@
+import { store } from "@/store";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import Image from "next/image";
 import { useRef } from "react";
+import { useSnapshot } from "valtio";
 
 const HeroV2 = () => {
   const container = useRef<HTMLElement>(null);
+  const { isLoader } = useSnapshot(store);
 
   useGSAP(
     () => {
       gsap.set(".text-image", { yPercent: 70, opacity: 0 });
-
-      gsap
-        .timeline({ defaults: { duration: 2, ease: "power1.out" } })
-        .to(".text-image", { delay: 0.5, yPercent: 0, opacity: 1 });
 
       gsap
         .timeline({
@@ -25,6 +24,17 @@ const HeroV2 = () => {
         .to(".text", { yPercent: 70 });
     },
     { scope: container },
+  );
+
+  useGSAP(
+    () => {
+      if (!isLoader) {
+        gsap
+          .timeline({ defaults: { duration: 2, ease: "power1.out" } })
+          .to(".text-image", { yPercent: 0, opacity: 1 });
+      }
+    },
+    { scope: container, dependencies: [isLoader] },
   );
 
   return (

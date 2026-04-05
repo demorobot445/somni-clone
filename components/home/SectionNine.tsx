@@ -16,7 +16,7 @@ const SectionNine = () => {
           .timeline({
             scrollTrigger: {
               trigger: container.current!,
-              start: "top top",
+              start: "top +=10%",
             },
             defaults: { duration: 1.5, ease: "power1.out" },
           })
@@ -40,7 +40,11 @@ const SectionNine = () => {
   );
 
   return (
-    <section ref={container} className="flex w-fit flex-col md:flex-row">
+    <section
+      id="story"
+      ref={container}
+      className="flex w-fit flex-col md:flex-row"
+    >
       <div className="grid grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-5 md:h-screen md:w-screen md:grid-cols-12 md:gap-x-8 md:gap-y-0 md:px-8">
         <div className="col-span-4 flex flex-col gap-8 pt-20 text-white md:col-span-5 md:col-start-2 2xl:col-span-3 2xl:col-start-4">
           <span className="text text-2xl">(1)</span>
@@ -117,7 +121,7 @@ const SectionNine = () => {
             width={1024}
           />
         </div>
-        <div className="col-span-4 flex flex-col justify-end gap-8 pt-20 pb-30 text-white md:col-start-8">
+        <div className="col-span-4 flex flex-col justify-end gap-8 pt-20 pb-20 text-white md:col-start-8 md:pb-30">
           <span className="text text-2xl">(4)</span>
           <p className="text">
             Strength, like the horse in our mark. Kindness in the way we welcome

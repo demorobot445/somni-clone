@@ -30,6 +30,7 @@ const SectionThree = () => {
 
   return (
     <section
+      id="gallery"
       ref={container}
       className="text-light-gray -mt-px flex w-fit flex-col bg-[#1C120F] md:h-dvh md:flex-row"
     >
@@ -112,7 +113,7 @@ const SectionThree = () => {
           </p>
         </div>
       </div> */}
-      <div className="text-soft-black relative flex h-dvh w-screen items-center justify-center">
+      <div className="text-soft-black relative flex w-screen items-center justify-center md:h-dvh">
         <div className="absolute -bottom-0.5 left-0 z-10 h-1 w-full bg-[#1C120F]" />
 
         <div className="w-full px-5 md:px-8">
