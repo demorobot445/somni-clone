@@ -55,9 +55,9 @@ const SectionSix = () => {
         ref={container}
         className="flex w-fit flex-col md:flex-row md:px-8"
       >
-        <div className="flex w-screen flex-col gap-5 px-5 py-14 md:h-screen md:flex-row md:gap-[5vw] md:px-0 md:pr-8">
+        <div className="flex w-screen flex-col gap-5 px-5 py-14 md:h-screen md:flex-row md:items-center md:gap-[5vw] md:px-0 md:pr-8">
           <Image
-            className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
+            className="images h-fit w-full object-cover md:w-[60vw]"
             src="/home/section-six/room-0.png"
             alt="room-img"
             width={1920}
@@ -65,40 +65,34 @@ const SectionSix = () => {
           />
           <div className="flex flex-col gap-4 md:w-[40vw]">
             <h1 className="text font-display block text-4xl md:text-[4vw] md:leading-none">
-              A space for connection, gathering, and Building Memories
-            </h1>
-            <p className="text md:text-[1.5vw] md:leading-[130%]">
               A space for connection, for gathering, for bringing people
               together.
-            </p>
+            </h1>
             <p className="text md:text-[1.5vw] md:leading-[130%]">
-              Since the fifteenth century, when roasted beans were first poured
-              in Yemen, it carried more than energy. it carried meaning. In Los
-              Angeles, we carry this heritage forward.
+              Coffee has always been more than a drink — it is a ritual, a
+              language, a shared moment. In Los Angeles, we honor that tradition
+              in our own way.
             </p>
           </div>
         </div>
-        <div className="flex w-screen flex-col gap-5 px-5 py-14 md:h-screen md:flex-row-reverse md:gap-[5vw] md:px-0 md:pl-8">
+        <div className="flex w-screen flex-col gap-5 px-5 py-14 md:h-screen md:flex-row-reverse md:items-center md:gap-[5vw] md:px-0 md:pl-8">
           <Image
-            className="images h-fit w-full object-cover md:mt-auto md:w-[60vw]"
+            className="images h-fit w-full object-cover md:w-[60vw]"
             src="/home/section-six/room-1.png"
             alt="room-img"
             width={1920}
             height={1080}
           />
-          <div className="flex flex-col justify-center gap-4 md:w-[40vw]">
+          <div className="flex flex-col gap-4 md:w-[40vw]">
             <p className="text md:text-[1.5vw] md:leading-[130%]">
-              Hala as a space to be... A tool for connection, for gathering, for
-              bringing people together.
+              Hala as a space to be… a place to gather, to connect, to belong.
             </p>
             <p className="text md:text-[1.5vw] md:leading-[130%]">
-              Since the fifteenth century, when roasted beans were first poured
-              in Yemen, it carried more than energy. it carried meaning. In Los
-              Angeles, we carry this heritage forward.
+              Coffee has long carried meaning beyond the cup — a symbol of
+              pause, presence, and community.
             </p>
             <p className="text md:text-[1.5vw] md:leading-[130%]">
-              It carried more than energy. it carried meaning. In Los Angeles,
-              we carry this heritage forward.
+              Here in Los Angeles, that spirit lives on.
             </p>
           </div>
         </div>
