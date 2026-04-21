@@ -1,7 +1,102 @@
+import { ADD_TO_CART, CREATE_CART } from "@/graphql/mutation";
+import { shopifyFetch } from "@/lib/shopify";
+import { useCartStore } from "@/store/cart";
+import {
+  ShopifyAddToCartResponse,
+  ShopifyCreateCartResponse,
+  ShopifyProduct,
+} from "@/types/shopify";
 import Image from "next/image";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const SectionEight = () => {
+type Props = {
+  products: ShopifyProduct[];
+};
+
+const Card = (product: ShopifyProduct) => {
+  const { setCart, openCart } = useCartStore();
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [activeDesc, setActiveDesc] = useState(false);
+  const [activeSize, setActiveSize] = useState(true);
+  const [selectedVariantId, setSelectedVariantId] = useState<string | null>(
+    product.variants.edges[0].node.id,
+  );
+
+  const createCart = async () => {
+    const res = await shopifyFetch<ShopifyCreateCartResponse>(CREATE_CART);
+    return res.data.cartCreate.cart;
+  };
+
+  const addToCart = async (cartId: string, merchandiseId: string) => {
+    const res = await shopifyFetch<ShopifyAddToCartResponse>(ADD_TO_CART, {
+      cartId,
+      lines: [
+        {
+          merchandiseId,
+          quantity: 1,
+        },
+      ],
+    });
+
+    return res.data.cartLinesAdd.cart;
+  };
+
+  const handleAddToCart = async () => {
+    if (!selectedVariantId) return;
+
+    try {
+      setIsLoading(true);
+      let cartId = localStorage.getItem("cartId");
+
+      if (!cartId) {
+        const newCart = await createCart();
+        cartId = newCart.id;
+        localStorage.setItem("cartId", cartId);
+      }
+
+      const cart = await addToCart(cartId, selectedVariantId);
+
+      setCart(cart);
+      openCart(); //
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <div className="group relative">
+      {!product.availableForSale && (
+        <span className="bg-soft-black absolute top-2 right-2 h-fit w-fit rounded-full px-2 py-1 font-medium text-white uppercase">
+          Sold Out
+        </span>
+      )}
+      <Image
+        className="w-full rounded-2xl object-cover md:rounded-3xl"
+        src={product.featuredImage?.url || "/placeholder-image-product.webp"}
+        alt={product.featuredImage?.altText || "product-img"}
+        width={500}
+        height={500}
+      />
+      <div className="absolute -bottom-full left-0 w-full p-2 transition-[bottom] duration-500 group-hover:bottom-0">
+        {product.availableForSale && (
+          <button
+            disabled={selectedVariantId === null}
+            onClick={() => handleAddToCart()}
+            className="w-full cursor-pointer rounded-2xl bg-[#1C120F] py-4 text-2xl text-white uppercase"
+          >
+            {isLoading ? "loading..." : "add to cart"}
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const SectionEight: React.FC<Props> = ({ products }) => {
   return (
     <section
       id="shop"
@@ -34,18 +129,10 @@ const SectionEight = () => {
                 },
               }}
             >
-              {[...Array(10)].map((elem, index) => {
+              {products.map((elem, index) => {
                 return (
                   <SwiperSlide key={index}>
-                    <div>
-                      <Image
-                        className="w-full rounded-2xl object-cover md:rounded-3xl"
-                        src={`/home/section-eight/item-${index % 2 === 0 ? 1 : 2}.png`}
-                        alt="item"
-                        width={500}
-                        height={500}
-                      />
-                    </div>
+                    <Card {...elem} />
                   </SwiperSlide>
                 );
               })}

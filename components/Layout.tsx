@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import Header from "./Header";
 import FooterV2 from "./FooterV2";
+import VideoPreloader from "./VideoPreloader";
+import CartDrawer from "./CartDrawer";
 
 const founderGrotesk = localFont({
   src: [
@@ -29,7 +31,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       id="smooth-wrapper"
       className={`${founderGrotesk.variable} ${gtSuperDisplay.variable} font-sans`}
     >
-      {/* <VideoPreloader /> */}
+      <CartDrawer />
+      <VideoPreloader />
       <Header />
       <div id="smooth-content">
         {children}

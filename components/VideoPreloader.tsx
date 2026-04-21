@@ -31,7 +31,7 @@ const VideoPreloader = () => {
       {/* Vimeo Background */}
       <iframe
         className="pointer-events-none absolute top-1/2 left-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 scale-115"
-        src="https://player.vimeo.com/video/1180116530?h=97d2d35f89&background=1&autoplay=1&loop=1&muted=1"
+        src="https://player.vimeo.com/video/1180135092?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&background=1&autoplay=1&loop=1&muted=1"
         allow="autoplay; fullscreen"
         allowFullScreen
       />

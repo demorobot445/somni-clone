@@ -1,9 +1,11 @@
 import { useState, useRef } from "react";
-import { Close, Hamburger } from "./common/Icons";
+import { Cart, Close, Hamburger } from "./common/Icons";
 import { gsap } from "gsap";
+import { useCartStore } from "@/store/cart";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const { openCart } = useCartStore();
   const menuRef = useRef(null);
 
   const menu = [
@@ -32,13 +34,14 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 z-30 flex w-full items-center justify-between p-5 text-white md:justify-center">
+    <header className="absolute top-0 left-0 z-30 flex w-full items-center justify-between p-5 text-white">
       {/* Hamburger */}
       <div className="size-7.5 md:hidden" onClick={toggleMenu}>
         <Hamburger />
       </div>
 
       {/* Desktop Menu */}
+      <div className="size-7.5" />
       <div className="hidden items-center justify-center gap-8 md:flex">
         {menu.map((elem, index) => (
           <button
@@ -50,6 +53,9 @@ const Header = () => {
           </button>
         ))}
       </div>
+      <button onClick={openCart} className="size-7.5 cursor-pointer">
+        <Cart />
+      </button>
 
       {/* Mobile Menu */}
       <div
