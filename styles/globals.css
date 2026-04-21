@@ -8,3 +8,7 @@
   --color-off-white: #f8f8f7;
   --color-light-gray: #dddddd;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
