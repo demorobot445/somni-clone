@@ -41,7 +41,7 @@ const VideoPreloader = () => {
         onClick={handleClick}
         className="btn absolute bottom-[10%] left-1/2 z-20 -translate-x-1/2 cursor-pointer text-xl text-white uppercase opacity-0 mix-blend-difference"
       >
-        Enter
+        SKIP
       </button>
     </div>
   );
