@@ -32,7 +32,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       className={`${founderGrotesk.variable} ${gtSuperDisplay.variable} font-sans`}
     >
       <CartDrawer />
-      <VideoPreloader />
+      {/* <VideoPreloader /> */}
       <Header />
       <div id="smooth-content">
         {children}
