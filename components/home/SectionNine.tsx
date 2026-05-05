@@ -47,21 +47,22 @@ const SectionNine = () => {
     >
       <div className="grid grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-5 md:h-screen md:w-screen md:grid-cols-12 md:gap-x-8 md:gap-y-0 md:px-8">
         <div className="col-span-4 flex flex-col gap-8 pt-20 text-white md:col-span-5 md:col-start-2 2xl:col-span-3 2xl:col-start-4">
-          <span className="text text-2xl">(1)</span>
+          <p className="text">Hey brother can we change the story to this </p>
+
+          <p className="text">It didn’t start as a business.</p>
+
           <p className="text">
-            I grew up in a culture where hospitality is more than a gesture — it
-            is a responsibility. Hosting someone meant care, pride, and
-            attention to detail. It meant making people feel genuinely welcome,
-            not just served.
+            It started the way a lot of things do a group of friends sitting
+            around, talking about what we could build. No real plan. No
+            investors. Just the idea that we wanted to create something of our
+            own.
           </p>
 
           <p className="text">
-            As I moved through different businesses and spaces, I began to
-            notice something missing. Hospitality was present, but often only on
-            the surface. The warmth was inconsistent, and the standards changed
-            from place to place. I knew I wanted to show what real hospitality
-            looks like — I just didn’t know where it belonged.
+            At the time, it could’ve gone in a hundred different directions. But
+            one thing kept coming back to us.
           </p>
+
           <Image
             className="images aspect-square h-55 object-contain mix-blend-difference 2xl:h-[35%]"
             src="/dotted/coffee.png"
@@ -72,47 +73,55 @@ const SectionNine = () => {
         </div>
         <div className="col-span-4 flex flex-col gap-8 py-20 text-white md:col-span-5 md:col-start-8 2xl:col-span-4 2xl:col-start-9 2xl:pt-40">
           <Image
-            className="images aspect-square h-50 scale-150 object-contain mix-blend-difference 2xl:h-[35%]"
+            className="images aspect-square h-50 scale-150 object-contain mix-blend-difference 2xl:h-[28%]"
             src="/dotted/bird.png"
             alt="img"
             height={1024}
             width={1024}
           />
-          <span className="text text-2xl">(2)</span>
 
           <p className="text">
-            Then I realized something simple. Coffee is part of people’s
-            everyday lives. It’s where mornings begin, where conversations
-            happen, and where routines are built. If hospitality was going to be
-            practiced consistently, it needed to live somewhere people return to
-            every day.
+            We come from a culture where hospitality isn’t a job. It’s how you
+            live. You take care of people because it means something, not
+            because it’s written in a job description.
           </p>
 
           <p className="text">
-            That realization became Hala. It began with a simple question: what
-            does it truly mean to do something properly? eal hospitality looks
-            like — I just didn’t know where it belonged.
+            That’s how we were raised. And once we started paying attention, we
+            realized something was off.
+          </p>
+
+          <p className="text">
+            We’d walk into places that looked right, good branding, good menus,
+            everything in place, but something was missing. The warmth wasn’t
+            consistent. The details were rushed. The care behind it just wasn’t
+            there the way it should be.
           </p>
         </div>
       </div>
       <div className="grid w-screen grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-5 md:-ml-px md:h-screen md:grid-cols-12 md:gap-x-8 md:gap-y-0 md:px-8">
         <div className="col-span-4 flex flex-col gap-8 pt-20 text-white md:col-start-3">
-          <span className="text text-2xl">(3)</span>
-
           <p className="text">
-            Before Hala was a space, it was a decision — a decision to build
-            something the right way. In a world that moves fast, where details
-            are rushed and standards are lowered, we chose to slow down and
-            focus on doing things properly. No shortcuts, no half effort, and no
-            compromise.
+            So the idea changed. It stopped being about just starting a
+            business, and became about fixing something we kept seeing
+            everywhere.
           </p>
 
           <p className="text">
-            Hala was built on the belief that standards still matter. Every
-            detail is intentional — from the ingredients we choose, to the way
-            each drink is prepared, to how we welcome every person who walks
-            through the door.
+            The question was where. And the answer was simple.
           </p>
+
+          <p className="text">Coffee.</p>
+
+          <p className="text">
+            It’s part of people’s everyday lives. It’s where mornings begin,
+            where conversations happen, where routines are built. If you’re
+            going to do hospitality properly, it has to live in those everyday
+            moments not just once in a while.
+          </p>
+
+          <p className="text">That’s where Hala came from.</p>
+
           <Image
             className="images aspect-square h-50 scale-170 object-contain mix-blend-difference 2xl:h-[35%]"
             src="/dotted/horse.png"
@@ -121,23 +130,27 @@ const SectionNine = () => {
             width={1024}
           />
         </div>
-        <div className="col-span-4 flex flex-col justify-end gap-8 pt-20 pb-20 text-white md:col-start-8 md:pb-30">
-          <span className="text text-2xl">(4)</span>
+        <div className="col-span-4 flex flex-col justify-end gap-8 pt-20 pb-20 text-white md:col-start-8 md:pb-60">
           <p className="text">
-            Strength, like the horse in our mark. Kindness in the way we welcome
-            you. Craft in every drink we serve. Culture in the details that
-            shape this space.
+            Not from a trend. Not from a concept deck.
+            <br />
+            From one decision to do something the right way.
+            <br />
+            No shortcuts. No half effort. No lowering the standard because it’s
+            busy or because no one’s paying attention. Everything here is
+            intentional. The ingredients. The process. The way we serve. The way
+            we show up every day. Because people feel that, even if they can’t
+            explain it.
+          </p>
+          <p className="text">
+            Hala is built on consistency. You’ll know what to expect every time
+            you walk in. And it’ll be right every time. That’s what we were
+            raised on.
           </p>
 
-          <p className="text">
-            Hala was created to be consistent — a place where the standard does
-            not change, and where you know what to expect every time you walk
-            in.
-          </p>
-          <p className="text">
-            Because here, we do more than serve drinks. We serve an experience.
-            And the standard is what we stand for.
-          </p>
+          <p className="text">That’s what we built.</p>
+
+          <p className="text">That is Hala.</p>
         </div>
       </div>
     </section>
