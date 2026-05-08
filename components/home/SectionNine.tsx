@@ -47,8 +47,6 @@ const SectionNine = () => {
     >
       <div className="grid grid-cols-4 gap-x-5 gap-y-14 bg-[#1C120F] px-5 md:h-screen md:w-screen md:grid-cols-12 md:gap-x-8 md:gap-y-0 md:px-8">
         <div className="col-span-4 flex flex-col gap-8 pt-20 text-white md:col-span-5 md:col-start-2 2xl:col-span-3 2xl:col-start-4">
-          <p className="text">Hey brother can we change the story to this </p>
-
           <p className="text">It didn’t start as a business.</p>
 
           <p className="text">
